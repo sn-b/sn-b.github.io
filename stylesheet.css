@@ -41,7 +41,7 @@ body {
 }
 
 .works, .aboutme, footer {
-	max-width: 100%;
+	width: 100%;
 }
 
 h1 {
@@ -126,7 +126,6 @@ header li a:hover {
 
 
 .top img {
-	height: 480px;
 	max-width: 100%;
 	position: relative;
 }
@@ -322,4 +321,12 @@ footer p {
 		margin-top: 18px;
 	}
 
+}
+
+/* 1190px以上
+-------------------------------------------------------------------------	*/
+@media (min-width: 1190px) {
+	.wrapper {
+		width: 960px;
+	}
 }
