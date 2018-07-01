@@ -41,7 +41,7 @@ body {
 }
 
 .works, .aboutme, footer {
-	width: 100%;
+	max-width: 100%;
 }
 
 h1 {
@@ -73,7 +73,7 @@ h2 {
 	transition: all .3s;
 }
 
-.works,.aboutme,.contact {
+.works,.aboutme {
 	padding-top: 128px;
 }
 
@@ -126,7 +126,7 @@ header li a:hover {
 
 
 .top img {
-	height: auto;
+	height: 480px;
 	max-width: 100%;
 	position: relative;
 }
