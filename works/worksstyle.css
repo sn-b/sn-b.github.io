@@ -1,105 +1,27 @@
 @charset "UTF-8";
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-}
-
-
-body {
-	color: #141716;
-  font-family: 'Helvetica',YuGothic,'Yu Gothic','Calibri','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
-  font-size: 14px;
-	letter-spacing: 1px;
-	line-height: normal;
-}
-
-.wrapper {
-	width: 960px;
-	margin: 0 auto;
-}
-
-h1 {
-	font-size: 32px;
-	font-weight: bold;
-	line-height: 320px;
-	text-align: center;
-}
-
-
-.gototop {
-	color: #141716;
-	margin-top: 24px;
-	text-align: right;
-}
-
-.gototop a {
-	color: #141716;
-	text-decoration: none;
-}
-
-.gototop a:hover {
-	color: #b8ceca;
-	transition: all .3s;
-}
-
-.works {
-	width: 960px;
-	text-align: center;
-	padding-top: 128px;
-}
-
-
-
-
-/* header */
-header {
-  background-color:rgba(255,255,255,.85);
-  height: 96px;
-  width: 960px;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-
-header li {
-	display: inline-block;
-	margin: 0 16px;
-}
-
-header li a {
-	color: #141716;
-	text-decoration: none;
-}
-
-header li a:hover {
-  color: #b8ceca;
-	transition: all .3s;
-}
 
 /* works */
-.works img {
+.works {
+	width: 100%;
 	margin: 0 auto;
+	padding-top: 128px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+}
+
+.works img {
 	vertical-align: bottom;
 }
 
 /* works-desc */
 .works-desc {
-	box-sizing: border-box;
 	text-align: left;
 	width: 800px;
 	margin: 0 auto;
@@ -110,8 +32,6 @@ header li a:hover {
 }
 
 .works-desc p {
-	font-size: 14px;
-	line-height: normal;
 	padding: 24px;
 }
 
@@ -122,7 +42,38 @@ footer {
 	margin-top: 72px;
 }
 
-footer p {
-  font-size: 14px;
-	text-align: center;
+/* 599px以下
+-------------------------------------------------------------------------	*/
+@media(max-width: 599px) {
+
+	.wrapper {
+		box-sizing: border-box;
+		max-width: 100%;
+		padding: 0 16px;
+	}
+
+	header {
+		max-width: 100%;
+	}
+
+	h1 {
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 160px;
+	}
+
+	.works {
+		padding-top: 96px;
+	}
+
+
+	/* works */
+	.works-desc {
+		max-width: 90%;
+	}
+
+	.works img {
+		max-width: 100%;
+	}
+
 }

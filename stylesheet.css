@@ -224,6 +224,10 @@ footer p {
 		padding: 0 16px;
 	}
 
+	.gototop {
+		text-align: center;
+	}
+
 	header {
 		max-width: 100%;
 	}
@@ -251,10 +255,10 @@ footer p {
 	  height: 64px;
 		display: flex;
 		align-items: center;
-		justify-content: flex-start;
+		justify-content: center;
 		display: -webkit-flex;
 		-webkit-align-items: center;
-		-webkit-justify-content: flex-start;
+		-webkit-justify-content: center;
 	}
 
 
