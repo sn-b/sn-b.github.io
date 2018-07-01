@@ -133,7 +133,6 @@ header li a:hover {
 
 .sitename {
 	background-color: rgba(255,255,255,.8);
-	box-sizing: border-box;
 	width: 800px;
 	height: 320px;
 	margin: auto;
@@ -143,7 +142,6 @@ header li a:hover {
 	bottom: 0;
 	left: 0;
 }
-
 
 /* works */
 .works h3 {
