@@ -97,12 +97,11 @@ header {
 }
 
 header ul {
-	list-style: none;
 	padding-left: 0;
 }
 
 header li {
-	display: inline-block !important
+	display: inline-block;
 }
 
 header li a {
@@ -120,6 +119,7 @@ header li a:hover {
 
 /* Top */
 .top {
+	max-width: 100%;
 	height: 480px;
 	margin-top: 160px;
 }
@@ -243,7 +243,7 @@ footer p {
 		margin: 0 0 18px;
 	}
 
-	.works,.aboutme {
+	.works {
 		padding-top: 128px;
 	}
 
