@@ -217,7 +217,7 @@ footer p {
 
 
 /* 599px以下
--------------------------------------------------------------	*/
+-------------------------------------------------------------------------	*/
 @media(max-width: 599px) {
 
 	.wrapper {
@@ -251,13 +251,21 @@ footer p {
 	/* header */
 	header {
 	  height: 64px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		-webkit-justify-content: center;
 	}
 
 	header li a {
 		color: #141716;
+		border: solid 1px #b8ceca;
 		text-decoration: none;
 		margin: 0;
-		padding: 16px 8px;
+		margin: 0 8px;
+		padding: 8px;
 	}
 
 
