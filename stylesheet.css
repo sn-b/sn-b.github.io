@@ -211,9 +211,9 @@ footer p {
 }
 
 
-/* 767px以下
+/* 599px以下
 -------------------------------------------------------------------------	*/
-@media(max-width: 767px) {
+@media(max-width: 599px) {
 
 	.wrapper {
 		box-sizing: border-box;
