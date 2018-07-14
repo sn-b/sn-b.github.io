@@ -36,6 +36,16 @@
 	padding: 24px;
 }
 
+.works-desc a {
+	color: #141716;
+	text-decoration: none;
+}
+
+.works-desc a:hover {
+	color: #b8ceca;
+	transition: all .3s;
+}
+
 /* footer */
 footer {
 	height: 96px;
@@ -68,6 +78,16 @@ footer {
 	/* works */
 	.works-desc {
 		max-width: 100%;
+	}
+
+	.works-desc a {
+		color: #141716;
+		text-decoration: none;
+	}
+
+	.works-desc a:hover {
+		color: #b8ceca;
+		transition: all .3s;
 	}
 
 	.works img {
